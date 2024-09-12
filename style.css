@@ -1,0 +1,416 @@
+:root {
+    --red: #A02335;
+    --darkblue:#1C1B25
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+#nav_container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3ex;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 12px;
+    padding-right: 30px;
+}
+
+#nav_container #navbar .change-color {
+    color: white;
+    transition: color 0.3s ease;
+
+}
+
+#nav_container #navbar .change-color:hover {
+    color: var(--red);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#home_article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color:#1C1B25;
+    padding-bottom: 9%;
+}
+
+#home_article article {
+    display: 50%;
+    margin-left: 3%;
+    margin-top: 5%;
+    color: white;
+}
+
+#home_article article h1 {
+    font-size: 310%;
+}
+
+#home_article article p {
+    font-size: 120%;
+    font-weight: 500;
+}
+
+#home_article article .cta1 {
+    padding: 2ex;
+    color: white;
+    background-color: var(--red);
+    margin-top: 4ex;
+    border-radius: 1ex;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px black;
+    transition: background-color 0.3s ease;
+    border-color: none;
+}
+
+#home_article article .cta1:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 3px var(--red);
+    border-color: none;
+}
+
+#home_article figure {
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+
+#home_article figure .mySlides {
+    display: none;
+}
+
+#home_article figure .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+#home_article figure .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#home_article figure .active {
+    background-color: #717171;
+}
+
+#home_article figure .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#article1 {
+    width: 100%;
+    display: flex;
+    background-image: url(https://img.freepik.com/premium-photo/3d-elegant-border-frame-with-shopping-cart-invoice-icon-polished-design-retail-promotions_980716-742575.jpg?w=996);
+    color:#1C1B25;
+    background-size: 100%;
+
+}
+
+#article1 article {
+    width: 100%;
+}
+
+#article1 article h1 {
+    font-size: 300%;
+    width: 50%;
+    margin-top: 3ex;
+    margin-left: 20%;
+}
+
+#article1 article p {
+    font-size: 120%;
+    width: 40%;
+    margin-top: 5ex;
+    margin-left: 20%;
+    font-weight: 500;
+}
+
+#article1 article .gambar {
+    margin-top: 10ex;
+    display: flex;
+    gap: 1ex;
+    margin-bottom: 8ex;
+    width: 100%;
+    justify-content: center;
+}
+
+#article1 article .gambar figure img {
+    border-radius: 7%;
+}
+
+#article1 .gambar figcaption {
+    font-weight: bolder;
+    font-size: large;
+    color:#1C1B25;
+
+}
+
+#article2 {
+    background-color:#1C1B25;
+    padding-top: 1%;
+    width: 100%;
+    padding-bottom: 5%;
+
+}
+
+#article2 article h1 {
+    color: white;
+    font-size: 250%;
+    text-align: center;
+    padding: 2%;
+}
+
+#article2 article p {
+    font-size: 120%;
+    font-weight: 500;
+    margin-left: 11ex;
+    color: white;
+}
+
+
+#article2 article .row .column {
+    float: left;
+    width: 10%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+#article2 article .row .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  
+}
+
+#article2 article .row .column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+#article2 article .row .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+#article2 article .container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#article2 article .container #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    margin-left: 2ex;
+    margin-right: 1ex;
+}
+
+/* Closable button inside the expanded image */
+#article2 article .container .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#article3{
+    background-color: whitesmoke;
+    padding-top: 1%;
+    padding-bottom: 7%;
+}
+
+#article3 article h1{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 250%;
+    text-align: center;
+}
+#article3 article p{
+    width: 100%;
+    font-weight: 500;
+    font-size: 120%;
+    text-align: center;
+}
+
+#article3 article .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 10px;
+}
+
+#article3 article .card .cs1{
+    width: 400px;
+    box-shadow: 10px 10px 15px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1C1B25;
+    color: white;
+    padding: 5px;
+}
+
+#article3 article .card .cs2{
+    width: 400px;
+    box-shadow: 10px 10px 15px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1C1B25;
+    color: white;
+    padding: 5px;
+}
+
+#article3 article .card p{
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+#article4 article{
+    text-align: center;
+    background-image: url(https://img.freepik.com/premium-photo/3d-rendering-black-red-shopping-basket-shopping-cart_754401-296.jpg?w=996);
+    color: white;
+    padding: 1%;
+    background-size: 100%;
+    padding-bottom: 8%;
+}
+
+#article4 article h1{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+#article4 article p{
+    font-size: 120%;
+    font-weight: 600;
+}
+
+#article4 article .cta2{
+    padding: 2ex;
+    color: white;
+    background-color: var(--red);
+    margin-top: 4ex;
+    border-radius: 1ex;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px black;
+    transition: background-color 0.3s ease;
+    border-color: none;
+}
+
+#article4 article .cta2:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 3px var(--red);
+    border-color: none;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer article{
+    background-color: var(--red);
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+
+.footer article a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+ 
+}
+
+.footer article a:hover{
+    color: #1C1B25;
+}
+
+
+#ourproducts {
+    margin-top: 20px;
+}
+
+#productcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.isi {
+    width: 200px;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.isi .isiimg {
+    width: 100%;
+    /* kode di bawah untuk membatasi tinggi card image */
+    height: 200px;
+    overflow: hidden;
+}
+
+.isi .isiimg img{
+    width: 100%;
+}
+
+.isi section {
+    padding: 10px;
+}
+
+.heder{
+    font-weight: bold;
+    font-size: 120%;
+}
+.cta3{
+    padding: 2ex;
+    color: white;
+    background-color: var(--red);
+    margin-top: 4ex;
+    border-radius: 1ex;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px black;
+    transition: background-color 0.3s ease;
+    border-color: none;
+}
+
+.cta3:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 3px var(--red);
+    border-color: none;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">"
+</head>
+
+<body>
+    <header>
+        <div id="nav_container">
+            <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?t=st=1726034676~exp=1726038276~hmac=f58516fcd97ef7d66fd71018af76e552d3b26636dbef19a99295872017dbd696&w=740"
+                alt="logo" width="80px" height="80px">
+            <nav id="navbar">
+                <a href="landingpage.html" class="change-color">Home</a>
+                <a href="products.html" class="change-color">Products</a>
+            </nav>
+        </div>
+    </header>
+    <section id="home_article">
+        <article>
+            <h1>Transform Your Shopping Experience Today!</h1>
+            <p>
+                Find exclusive deals, top-quality products, and fast shipping—all in one place. Discover why thousands
+                of customers trust us for all their [product category] needs.
+            </p>
+            <button class="cta1">Explore Deals</button>
+        </article>
+
+        <figure>
+            <div class="slideshow-container"></div>
+            <div class="mySlides fade">
+                <img src="https://img.freepik.com/free-psd/shoes-social-media-post-square-banner-design-template_84443-14095.jpg?t=st=1726066737~exp=1726070337~hmac=dc0c58dfba1f8f09ea4b16e4ffa2f90d0df7d87c8dfa129acef1a806ddc81cc8&w=740"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://img.freepik.com/premium-psd/psd-cosmetics-beauty-products-makeup-social-media-template_1008355-30.jpg?w=740"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://img.freepik.com/free-psd/cyber-monday-social-media-post_47987-17608.jpg?t=st=1726069795~exp=1726073395~hmac=9b6068c14ae4da2d119c786e4850817c7be3af574bc055741538a28963134d51&w=740"
+                    style="width:100%">
+            </div>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </figure>
+    </section>
+    <section id="article1">
+        <article>
+            <h1>What Makes Us Different?</h1>
+            <p>
+                Tired of endless browsing with little results? We’ve handpicked a selection of premium [product
+                category]
+                that you'll love.
+            </p>
+            <div class="gambar">
+                <figure>
+                    <center>
+                        <img src="https://img.freepik.com/premium-vector/delivery-icon-fast-delivery-free-delivery-home-delivery-truck-vector-illustration_751874-1470.jpg?w=826"
+                            width="200px" height="200px">
+                        <figcaption>Free & Fast Shipping</figcaption>
+                    </center>
+                </figure>
+                <figure>
+                    <center>
+                        <img src="https://img.freepik.com/premium-vector/exclusive-offer-sale-banner-design_686319-784.jpg?w=740"
+                            width="200" height="200">
+                        <figcaption>Exclusive Discounts for members only</figcaption>
+                    </center>
+                </figure>
+                <figure>
+                    <center>
+                        <img src="https://img.freepik.com/premium-vector/satisfaction-guarantee_126283-1465.jpg?w=740"
+                            width="200" height="200">
+                        <figcaption>Satisfaction Guarantee</figcaption>
+                    </center>
+                </figure>
+            </div>
+        </article>
+    </section>
+    <section id="article2">
+        <article>
+            <h1> Featured Products</h1>
+            <hr>
+            <p>See what’s trending now in our make up collection.</p>
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+                    <img src="https://img.freepik.com/free-vector/cosmetics-bottle-mountain-landscape-background_33099-1917.jpg?t=st=1726119174~exp=1726122774~hmac=fbf079fcde7c844671be95ed517a3c9db13c157b4ebde1d9bf9008e19521a8a8&w=1060"
+                        alt="Our natural facial care line is crafted with pure, organic ingredients to nourish and rejuvenate your skin. Free from harsh chemicals, each product promotes a radiant, healthy complexion while being gentle enough for all skin types. Treat your skin to the care it deserves, naturally."
+                        style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="https://img.freepik.com/free-vector/realistic-sunscreen-bottle-promo_52683-62723.jpg?t=st=1726121521~exp=1726125121~hmac=db153e47368747825114e1fa3d014fcc5c865d9ae87f3859e1ecd74156fe4187&w=1060"
+                        alt="Our Watering Moisture Sunscreen provides deep hydration while protecting your skin from harmful UV rays. Lightweight, non-greasy, and perfect for daily use, it keeps your skin moisturized and shielded for a healthy, glowing complexion."
+                        style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="https://img.freepik.com/free-vector/skincare-brand-bottle-ad_52683-35127.jpg?t=st=1726119094~exp=1726122694~hmac=cd76816f3e575f28fdaea27bee52d8f8ac738333d6b538d7572b12441a7c381d&w=1060"
+                        alt="Our moisture skincare line is designed to deeply hydrate and revitalize your skin. Infused with natural ingredients, each product locks in moisture, leaving your skin soft, supple, and radiant all day long. Perfect for all skin types, especially dry and sensitive skin."
+                        style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="https://img.freepik.com/free-vector/realistic-ad-template-natural-cream_23-2148255735.jpg?t=st=1726121596~exp=1726125196~hmac=246cd33ddaefd511faefaf12132659976936ce846837c9e68f5977572ce7a286&w=1060"
+                        alt="Our luxurious cosmetic cream deeply hydrates and revitalizes your skin, leaving it soft, smooth, and glowing. Infused with nourishing ingredients, it's perfect for daily use to enhance your natural radiance. Suitable for all skin types."
+                        style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:50%">
+                <div id="imgtext"></div>
+            </div>
+            <br><br><br>
+
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+            </script>
+        </article>
+    </section>
+    <section id="article3">
+        <article>
+            <h1>Testimonials</h1>
+            <p>Don’t just take our word for it—see what our customers have to say!</p>
+            <hr>
+            <br>
+            <br>
+            <div class="card">
+                <div class="cs1">
+                    <p>"I’ve never had a smoother shopping experience. The quality and service are unmatched!"</p>
+                    <br>
+                    <p>– Uzumaki Teriyaki</p>
+                </div>
+                <div class="cs2">
+                    <p>"Fast shipping, excellent customer support, and fantastic products. I’m a fan for life!"</p>
+                    <br>
+                    <p>– Akagami </p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <section id="article4">
+        <article>
+            <h1>Limited-Time Offer</h1>
+            <p>Our biggest sale of the year is here!
+                Get up to 50% off on selected items. Don't miss out—sale ends soon!</p>
+            <button class="cta2">Claim Your Discount </button>
+        </article>
+    </section>
+    <footer class="footer">
+        <article>
+            <a href="">Social Media Links</a>
+            <a href="">Contact Information</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+        </article>
+    </footer>
+</body>
+
+</html>

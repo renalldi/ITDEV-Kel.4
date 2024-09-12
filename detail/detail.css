@@ -1,0 +1,44 @@
+#home_article figure {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#home_article figure img {
+    width: fit-content;
+    height: 100%;
+}
+
+
+.btn{
+    background-color: #1C1B25;
+    padding: 1ex;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    
+}
+
+
+
+.btn .cta{ 
+    padding: 1ex;
+    color: white;
+    background-color: var(--red);
+    margin-top: 4ex;
+    border-radius: 1ex;
+    font-weight: bolder;
+    box-shadow: 3px 3px 6px black;
+    transition: background-color 0.3s ease;
+    border-color: none;
+}
+
+
+
+.btn .cta:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 6px var(--red);
+    border-color: none;
+}
+
